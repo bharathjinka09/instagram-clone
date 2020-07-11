@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import Post from './Post'
 
 function App() {
   return (
@@ -11,6 +12,10 @@ function App() {
         alt="logo"
         />
       </div>
+
+      <Post />
+      <Post />
+      <Post />
     </div>
   );
 }
