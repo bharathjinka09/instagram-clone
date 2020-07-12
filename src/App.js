@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import Post from './Post'
+import ImageUpload from './ImageUpload'
 import { db, auth } from './firebase'
 import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal'
@@ -102,6 +103,17 @@ function App() {
 
   return (
     <div className="app">
+
+      {user?.displayName ? (
+         <ImageUpload username={user.displayName} />
+         
+      ):(
+         
+         <h3>Sorry, Login to upload!</h3>
+
+      )}
+
+
       <Modal 
       open={open}
       onClose={() => setOpen(false)}
@@ -136,13 +148,15 @@ function App() {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           />
-          <Button type="submit" onClick={signUp}>Sign Up</Button>
+          <br />
+
+          <Button variant="contained" color="primary" type="submit" onClick={signUp}>Sign Up</Button>
           </form>
       </div>
 
       </Modal>
 
-      <Modal 
+      <Modal
       open={openSignIn}
       onClose={() => setOpenSignIn(false)}
       >
@@ -168,7 +182,8 @@ function App() {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           />
-          <Button type="submit" onClick={signIn}>Sign In</Button>
+          <br />
+          <Button variant="contained" color="primary" type="submit" onClick={signIn}>Sign In</Button>
           </form>
       </div>
 
@@ -182,11 +197,11 @@ function App() {
         />
       </div>
       {user ? ( 
-        <Button onClick={() => auth.signOut()}>Logout</Button>
+        <Button style={{margin:'1rem'}} size="small" variant="contained" color="secondary" onClick={() => auth.signOut()}>Logout</Button>
       ):(
         <div className="app__loginContainer">
-          <Button onClick={() => setOpenSignIn(true)}>Sign In</Button>
-          <Button onClick={() => setOpen(true)}>Sign Up</Button>
+          <Button style={{margin:'1rem'}} size="small" variant="contained" color="primary" onClick={() => setOpenSignIn(true)}>Sign In</Button>
+          <Button style={{margin:'1rem'}} size="small" variant="contained" color="primary" onClick={() => setOpen(true)}>Sign Up</Button>
         </div>
       )}
 
