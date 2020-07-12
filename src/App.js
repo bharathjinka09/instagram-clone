@@ -186,7 +186,10 @@ function App() {
         alt="logo"
         />
       {user ? ( 
+        <>
+            {user.displayName}
             <Button size="small" variant="contained" color="secondary" onClick={() => auth.signOut()}>Logout</Button>
+        </>
           ):(
             <div className="app__loginContainer">
               <Button style={{margin:'3px'}} size="small" variant="contained" color="primary" onClick={() => setOpenSignIn(true)}>Sign In</Button>
