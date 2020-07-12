@@ -65,7 +65,7 @@ function App() {
   // useEffect runs a piece of code based on a specific condition 
   useEffect(() => {
     // this is where code runs
-    db.collection('posts').onSnapshot(snapshot => {
+    db.collection('posts').orderBy('timestamp','desc').onSnapshot(snapshot => {
       // everytime a new post is added, this code runs
       setPosts(snapshot.docs.map(doc => ({
         id: doc.id,
@@ -103,17 +103,6 @@ function App() {
 
   return (
     <div className="app">
-
-      {user?.displayName ? (
-         <ImageUpload username={user.displayName} />
-         
-      ):(
-         
-         <h3>Sorry, Login to upload!</h3>
-
-      )}
-
-
       <Modal 
       open={open}
       onClose={() => setOpen(false)}
@@ -210,8 +199,17 @@ function App() {
           <Post key={id} username={post.username} caption={post.caption} imageUrl={post.imageUrl} />
         ))
       }
+      {user?.displayName ? (
+               <ImageUpload username={user.displayName} />
+               
+            ):(
+               
+               <h3>Sorry, Login to upload!</h3>
+
+      )}
     </div>
   );
 }
+
 
 export default App;
