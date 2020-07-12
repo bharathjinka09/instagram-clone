@@ -3,6 +3,7 @@ import { Button } from '@material-ui/core'
 import { storage, db } from './firebase'
 import firebase from 'firebase';
 import './ImageUpload.css'
+import { TextField } from '@material-ui/core';
 
 
 function ImageUpload({username}){
@@ -62,7 +63,7 @@ function ImageUpload({username}){
 		<div className="imageupload">
 		  <progress className='imageupload__progress' value={progress} max="100" />
 		  <br/>
-		  <input 
+		  <TextField 
 		  type="text" 
 		  placeholder="Enter a caption...." 
 		  onChange={event => setCaption(event.target.value)}
