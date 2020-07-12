@@ -80,7 +80,7 @@ function App() {
     auth
     .createUserWithEmailAndPassword(email, password)
     .then((authUser) => {
-      authUser.user.updateProfile({
+      return authUser.user.updateProfile({
         displayName: username
       })
     })
