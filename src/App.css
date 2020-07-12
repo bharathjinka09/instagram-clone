@@ -11,6 +11,11 @@
   flex-direction: column;
 }
 
+.app__signin{
+  display: flex;
+  flex-direction: column;
+}
+
 
 .app__header{
   background-color: white;
