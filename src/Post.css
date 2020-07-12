@@ -12,6 +12,13 @@
 	border-bottom: 1px solid lightgray;
 }
 
+.center {
+    /*text-align:center;*/
+    width:100%;
+    margin:auto;
+    margin-bottom: 45px;
+}
+
 .post__text{
 	font-weight: normal;
 	padding: 20px;

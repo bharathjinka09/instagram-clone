@@ -22,7 +22,7 @@ function getModalStyle(){
 const useStyles = makeStyles((theme) => ({ 
   paper:{
     position: 'absolute',
-    width: 400,
+    width: '50%',
     backgroundColor: theme.palette.background.paper,
     border: '2px solid black',
     boxShadow: theme.shadows[5],
@@ -196,15 +196,15 @@ function App() {
       </div>
       
       <div className='app__posts'>
-        <div className='app__postsLeft'>
-        
+        {/* <div className='app__postsLeft'>
+        */ }
         {
           posts.map(({id, post}) => (
             <Post key={id} postId={id} user={user} username={post.username} caption={post.caption} imageUrl={post.imageUrl} />
           ))
         }
-        </div>
-        <div className='app__postsRight'>
+        {/* </div> */ }
+        {/* <div className='app__postsRight'>
 
           <InstagramEmbed
           url='https://www.instagram.com/p/B_uf9dmAGPw/'
@@ -218,7 +218,7 @@ function App() {
           onAfterRender={() => {}}
           onFailure={() => {}}
           />
-        </div>
+        </div> */ }
       </div>
 
       {user?.displayName ? (
@@ -226,7 +226,7 @@ function App() {
                
             ):(
                
-               <h3>Sorry, Login to upload!</h3>
+               <h3 style={{'textAlign': 'center', 'padding': '2%'}}>Please login to upload!</h3>
 
       )}
     </div>

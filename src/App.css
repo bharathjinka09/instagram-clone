@@ -35,8 +35,9 @@
 
 .app__posts{
   padding: 20px;
-  display: flex;
+  /*display: flex;*/
   justify-content: center;
+  margin: auto;
 }
 
 .app__postsRight{
