@@ -6,6 +6,12 @@
   background-color: #fafafa;
 }
 
+.app__signup{
+  display: flex;
+  flex-direction: column;
+}
+
+
 .app__header{
   background-color: white;
   padding: 20px;
