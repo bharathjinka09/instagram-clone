@@ -6,6 +6,7 @@ import { db, auth } from './firebase'
 import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal'
 import { Button, Input } from '@material-ui/core'
+import InstagramEmbed from 'react-instagram-embed'
 
 function getModalStyle(){
   const top = 50;
@@ -184,21 +185,42 @@ function App() {
         src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"
         alt="logo"
         />
-      </div>
       {user ? ( 
-        <Button style={{margin:'1rem'}} size="small" variant="contained" color="secondary" onClick={() => auth.signOut()}>Logout</Button>
-      ):(
-        <div className="app__loginContainer">
-          <Button style={{margin:'1rem'}} size="small" variant="contained" color="primary" onClick={() => setOpenSignIn(true)}>Sign In</Button>
-          <Button style={{margin:'1rem'}} size="small" variant="contained" color="primary" onClick={() => setOpen(true)}>Sign Up</Button>
+            <Button size="small" variant="contained" color="secondary" onClick={() => auth.signOut()}>Logout</Button>
+          ):(
+            <div className="app__loginContainer">
+              <Button style={{margin:'3px'}} size="small" variant="contained" color="primary" onClick={() => setOpenSignIn(true)}>Sign In</Button>
+              <Button style={{margin:'3px'}} size="small" variant="contained" onClick={() => setOpen(true)}>Sign Up</Button>
+            </div>
+          )}
+      </div>
+      
+      <div className='app__posts'>
+        <div className='app__postsLeft'>
+        
+        {
+          posts.map(({id, post}) => (
+            <Post key={id} postId={id} user={user} username={post.username} caption={post.caption} imageUrl={post.imageUrl} />
+          ))
+        }
         </div>
-      )}
+        <div className='app__postsRight'>
 
-      {
-        posts.map(({id, post}) => (
-          <Post key={id} username={post.username} caption={post.caption} imageUrl={post.imageUrl} />
-        ))
-      }
+          <InstagramEmbed
+          url='https://www.instagram.com/p/B_uf9dmAGPw/'
+          maxWidth={320}
+          hideCaption={false}
+          containerTagName='div'
+          protocol=''
+          injectScript
+          onLoading={() => {}}
+          onSuccess={() => {}}
+          onAfterRender={() => {}}
+          onFailure={() => {}}
+          />
+        </div>
+      </div>
+
       {user?.displayName ? (
                <ImageUpload username={user.displayName} />
                

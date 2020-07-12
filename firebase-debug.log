@@ -1,0 +1,124 @@
+[debug] [2020-07-12T11:26:17.654Z] ----------------------------------------------------------------------
+[debug] [2020-07-12T11:26:17.656Z] Command:       /home/mieone/.nvm/versions/node/v12.16.2/bin/node /home/mieone/.nvm/versions/node/v12.16.2/bin/firebase init
+[debug] [2020-07-12T11:26:17.656Z] CLI Version:   3.17.2
+[debug] [2020-07-12T11:26:17.656Z] Platform:      linux
+[debug] [2020-07-12T11:26:17.656Z] Node Version:  v12.16.2
+[debug] [2020-07-12T11:26:17.656Z] Time:          Sun Jul 12 2020 16:56:17 GMT+0530 (India Standard Time)
+[debug] [2020-07-12T11:26:17.656Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2020-07-12T11:26:17.664Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] [2020-07-12T11:26:17.664Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/mieone/Downloads/instagram-clone
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2020-07-12T11:26:36.236Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects  
+  
+ Sun Jul 12 2020 16:56:36 GMT+0530 (India Standard Time)
+[debug] [2020-07-12T11:26:48.365Z] ----------------------------------------------------------------------
+[debug] [2020-07-12T11:26:48.367Z] Command:       /home/mieone/.nvm/versions/node/v12.16.2/bin/node /home/mieone/.nvm/versions/node/v12.16.2/bin/firebase init
+[debug] [2020-07-12T11:26:48.367Z] CLI Version:   3.17.2
+[debug] [2020-07-12T11:26:48.367Z] Platform:      linux
+[debug] [2020-07-12T11:26:48.367Z] Node Version:  v12.16.2
+[debug] [2020-07-12T11:26:48.368Z] Time:          Sun Jul 12 2020 16:56:48 GMT+0530 (India Standard Time)
+[debug] [2020-07-12T11:26:48.368Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2020-07-12T11:26:48.375Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] [2020-07-12T11:26:48.375Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/mieone/Downloads/instagram-clone
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2020-07-12T11:26:49.742Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects  
+  
+ Sun Jul 12 2020 16:56:49 GMT+0530 (India Standard Time)
+[debug] [2020-07-12T11:26:53.741Z] ----------------------------------------------------------------------
+[debug] [2020-07-12T11:26:53.743Z] Command:       /home/mieone/.nvm/versions/node/v12.16.2/bin/node /home/mieone/.nvm/versions/node/v12.16.2/bin/firebase init
+[debug] [2020-07-12T11:26:53.744Z] CLI Version:   3.17.2
+[debug] [2020-07-12T11:26:53.744Z] Platform:      linux
+[debug] [2020-07-12T11:26:53.744Z] Node Version:  v12.16.2
+[debug] [2020-07-12T11:26:53.744Z] Time:          Sun Jul 12 2020 16:56:53 GMT+0530 (India Standard Time)
+[debug] [2020-07-12T11:26:53.744Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2020-07-12T11:26:53.752Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] [2020-07-12T11:26:53.752Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/mieone/Downloads/instagram-clone
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2020-07-12T11:26:56.304Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects  
+  
+ Sun Jul 12 2020 16:56:56 GMT+0530 (India Standard Time)
+[debug] [2020-07-12T11:32:52.139Z] ----------------------------------------------------------------------
+[debug] [2020-07-12T11:32:52.141Z] Command:       /home/mieone/.nvm/versions/node/v12.16.2/bin/node /home/mieone/.nvm/versions/node/v12.16.2/bin/firebase init
+[debug] [2020-07-12T11:32:52.141Z] CLI Version:   3.17.2
+[debug] [2020-07-12T11:32:52.141Z] Platform:      linux
+[debug] [2020-07-12T11:32:52.141Z] Node Version:  v12.16.2
+[debug] [2020-07-12T11:32:52.142Z] Time:          Sun Jul 12 2020 17:02:52 GMT+0530 (India Standard Time)
+[debug] [2020-07-12T11:32:52.142Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2020-07-12T11:32:52.149Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] [2020-07-12T11:32:52.149Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/mieone/Downloads/instagram-clone
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2020-07-12T11:32:55.703Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects  
+  
+ Sun Jul 12 2020 17:02:55 GMT+0530 (India Standard Time)
